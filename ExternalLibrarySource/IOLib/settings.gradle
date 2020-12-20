@@ -1,0 +1,3 @@
+include ':IOLib'
+include ':app'
+rootProject.name = "IOLib"
