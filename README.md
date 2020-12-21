@@ -1,4 +1,4 @@
-# IOLib_IdentifierLib-Dummy
+# IOLib_IdentifierLib
 Unity app to test IO & Identity Library.
  
 ## In-Game screenshot
@@ -6,7 +6,7 @@ Here is the final in-game screenshot displaying the **'Player'** data as **'Leve
 that is **saved** & **loaded** from disk.<br>
 Also, a __Unique Identifier__ that is specific to the device that emits the same ID on app launch & re-installs is displayed.
 
-![In-Game screenshot](https://github.com/aalekhm/IOLib_IdentifierLib-Dummy/blob/main/Screenshot.jpeg?raw=true)
+![In-Game screenshot](https://github.com/aalekhm/IOLib_IdentifierLib/blob/main/Screenshot.jpeg?raw=true)
 
 Add the project to Unity by selecting the top level folder.<br>
 Kindly switch the __Build Settings__ to __'Android'__ via __'File -> Build Settings -> Platform (Android)'__.<br>
