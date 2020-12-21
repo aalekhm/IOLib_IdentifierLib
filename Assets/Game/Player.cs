@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     public int                      m_Level;
     public int                      m_Health;
 
+    private const string            PLAYER_SAVE_FILE = "playerData.dat";
     public void Start()
     {
         LoadFromDisk();
@@ -43,13 +44,13 @@ public class Player : MonoBehaviour
         PlayerData pData = new PlayerData(this);
         if (pData != null)
         {
-            SaveManager.SaveToDisk<PlayerData>(pData, "playerData.dat", true);
+            SaveManager.SaveToDisk<PlayerData>(pData, PLAYER_SAVE_FILE, true);
         }
     }
 
     public void LoadFromDisk()
     {
-        PlayerData pData = SaveManager.LoadFromDisk<PlayerData>("playerData.dat");
+        PlayerData pData = SaveManager.LoadFromDisk<PlayerData>(PLAYER_SAVE_FILE);
         if (pData != null)
         {
             UpdateData(pData);
